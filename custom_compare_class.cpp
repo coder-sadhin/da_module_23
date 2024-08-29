@@ -44,6 +44,10 @@ int main()
         Student obj(name, roll, marks);
         pq.push(obj);
     }
-    
+    while (!pq.empty())
+    {
+        cout << pq.top().name << " " << pq.top().roll << " " << pq.top().marks << endl;
+        pq.pop();
+    }
     return 0;
 }
